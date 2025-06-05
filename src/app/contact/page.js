@@ -3,6 +3,7 @@ import React from 'react';
 import { Layout, Typography, Form, Input, Button, Card, Row, Col, message } from 'antd';
 import { MailOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -170,6 +171,7 @@ export default function Contact() {
           </Row>
         </div>
       </Content>
+      <Footer />
     </Layout>
   );
 }

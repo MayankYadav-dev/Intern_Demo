@@ -3,6 +3,7 @@ import React from 'react';
 import { Layout, Typography, Card, Row, Col, Avatar } from 'antd';
 import { UserOutlined, TeamOutlined, TrophyOutlined } from '@ant-design/icons';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -83,6 +84,7 @@ export default function About() {
           </div>
         </div>
       </Content>
+      <Footer />
     </Layout>
   );
 }

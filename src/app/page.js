@@ -4,6 +4,7 @@ import { Layout, Button, Typography, Row, Col, Space } from 'antd';
 import { RocketOutlined, StarOutlined } from '@ant-design/icons';
 import Navbar from '@/components/Navbar';
 import ProductCard from '@/components/ProductCard';
+import Footer from '@/components/Footer';
 
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -42,10 +43,9 @@ export default function Home() {
   };
 
   return (
-    <Layout className="min-h-screen">
+    <Layout className="min-h-screen flex flex-col">
       <Navbar />
-      <Content className="mt-16">
-        {/* Hero Section */}
+      <Content className="mt-16 flex-1">
         <div className="bg-gradient-to-br from-blue-500 via-purple-600 to-blue-800 py-20 px-5 text-center text-white">
           <div className="max-w-4xl mx-auto">
             <Title level={1} className="!text-white !mb-6 text-4xl lg:text-6xl">
@@ -74,7 +74,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Products Section */}
         <div className="py-16 px-5 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
@@ -100,7 +99,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CTA Section */}
         <div className="py-16 px-5 text-center bg-white">
           <div className="max-w-4xl mx-auto">
             <StarOutlined className="text-5xl text-blue-500 mb-6" />
@@ -120,6 +118,7 @@ export default function Home() {
           </div>
         </div>
       </Content>
+      <Footer />
     </Layout>
   );
 }
